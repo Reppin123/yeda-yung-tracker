@@ -20,7 +20,7 @@ FULL REFRESH PIPELINE (run in order, from the scraping/ folder):
 USAGE
   python 04_update_dashboard.py
   python 04_update_dashboard.py --merged ../data/merged.json --thumbs ../data/thumbs.json \
-      --dashboard ../dashboard/YEDA_YUNG_Live_Campaign_Tracker.html
+      --dashboard ../dashboard/index.html
 """
 
 import argparse
@@ -32,7 +32,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--merged', default='../data/merged.json')
     ap.add_argument('--thumbs', default='../data/thumbs.json')
-    ap.add_argument('--dashboard', default='../dashboard/YEDA_YUNG_Live_Campaign_Tracker.html')
+    ap.add_argument('--dashboard', default='../dashboard/index.html')
     args = ap.parse_args()
 
     merged = json.load(open(args.merged))

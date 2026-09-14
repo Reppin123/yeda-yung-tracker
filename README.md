@@ -12,7 +12,7 @@ data/         the tracked post list + every pull's raw and cleaned output
 scraping/     the 4-step pipeline that refreshes data/ and the dashboard
 ```
 
-### `dashboard/YEDA_YUNG_Live_Campaign_Tracker.html`
+### `dashboard/index.html`
 Just double-click it / open in any browser. No server, no build step — all
 data is embedded directly in the file. It's also editable: click any text on
 the page to edit it in place (a small formatting toolbar appears when you
